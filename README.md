@@ -1,5 +1,4 @@
 <h1> DISEÑO DE INTERFACES WEB </h1>
-<title>Diseño de interfaces web</title>
 <h3> Tema0 Creación de Github Pages Site </h3>
 <h3>TEMA1 Planificación de Interfaces Gráficas</h3>
 <h3>TEMA2 Uso de estilos</h3>
