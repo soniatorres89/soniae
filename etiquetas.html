@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplos de HTML</title>
+</head>
+<body>
+  <h1>Etiquetas interesantes</h1>
+  <div class="wrapper">
+    <details>
+      <summary>
+        1. El atributo <code>loading=lazy</code>
+      </summary>
+      <p>Puede utilizar el <code>loading="lazy"</code> atributo para diferir la carga de la imagen hasta que el usuario se desplace hacia ella.</p>
+      <img src="imagen.jpg" alt="Descripción de la imagen" loading="lazy">
+      <!-- NO conocía este atributo, pero me parece super interesante -->
+      <p>Ejemplo:</p>
+      <p><img src="image.jpg" alt="Descripción de la imagen" loading="lazy"></p>
+    </details>
+  </div>
+
+  <div class="wrapper">
+    <details>
+      <summary>
+        2. Enlaces de correo electrónico, llamadas y SMS
+      </summary>
+      <p>Puedes utilizar enlaces especiales para correos electrónicos (<code>mailto:</code>), llamadas telefónicas (<code>tel:</code>) y SMS (<code>sms:</code>).</p>
+      <p>Ejemplo:</p>
+      <p><a href="mailto:correo@example.com">Enviar correo</a></p>
+      <p><a href="tel:+1234567890">Llamar</a></p>
+      <p><a href="sms:+1234567890">Enviar SMS</a></p>
+    </details>
+  </div>
+
+  <div class="wrapper">
+    <details>
+      <summary>
+        3. Listas ordenadas con el atributo <code>inicio</code>
+      </summary>
+      <p>Puede utilizar el atributo <code>start</code> en listas ordenadas (<code>&lt;ol&gt;</code>) para cambiar el punto de partida de la numeración.</p>
+      <p>Ejemplo:</p>
+      <ol start="5">
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+        <li>Elemento 7</li>
+      </ol>
+    </details>
+  </div>
+
+  <div class="wrapper">
+    <details>
+      <summary>
+        4. El elemento <code>&lt;meter&gt;</code>
+      </summary>
+      <p>Puede utilizar el elemento <code>&lt;meter&gt;</code> para mostrar cantidades en una escala predefinida.</p>
+      <p>Ejemplo:</p>
+      <p><meter value="70" min="0" max="100">70%</meter></p>
+    </details>
+  </div>
+
+  <div class="wrapper">
+    <details>
+      <summary>
+        5. Búsqueda nativa HTML
+      </summary>
+      <p>La búsqueda nativa de HTML se crea con el elemento <code>&lt;input&gt;</code> de tipo "search".</p>
+      <p>Ejemplo:</p>
+      <p><input type="search" placeholder="Buscar..."></p>
+    </details>
+  </div>
+
+  <div class="wrapper">
+    <details>
+      <summary>
+        6. Elemento de conjunto de campos
+      </summary>
+      <p>Puede utilizar el <code>&lt;fieldset&gt;</code> elemento para agrupar varios controles, así como etiquetas (<code>&lt;label&gt;</code>), dentro de un formulario web.</p>
+      <p>Ejemplo:</p>
+      <form>
+        <fieldset>
+          <legend>Datos Personales</legend>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre"><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </fieldset>
+      </form>
+    </details>
+  </div>
+
+  <div class="wrapper">
+    <details>
+      <summary>
+        7. Abridor de ventanas
+      </summary>
+      <p>Las páginas abiertas con <code>target="_blank"</code> permiten que la nueva página acceda a la original <code>window.opener</code>. Esto puede tener implicaciones de seguridad y rendimiento. Incluir <code>rel="noopener"</code> o <code>rel="noreferrer"</code> previene esto.</p>
+      <p>Ejemplo:</p>
+      <p><a href="nueva_pagina.html" target="_blank" rel="noopener">Abrir en nueva ventana</a></p>
+    </details>
+  </div>
+
+  <div class="wrapper">
+    <details>
+      <summary>
+        8. Elemento <code>&lt;base&gt;</code>
+      </summary>
+      <p>Si desea abrir todos los enlaces del documento en una nueva pestaña, puede utilizar el <code>&lt;base&gt;</code> elemento.</p>
+      <p>Ejemplo:</p>
+      <p><base href="https://www.ejemplo.com/"></p>
+    </details>
+  </div>
+
+  <div class="wrapper">
+    <details>
+      <summary>
+        9. Eliminación de caché de Favicon
+      </summary>
+      <p>Para actualizar el favicon de su sitio web, puede obligar a los navegadores a descargar una nueva versión agregando <code>?v=2</code> al nombre del archivo.</p>
+      <p>Ejemplo:</p>
+      <p><link rel="icon" href="favicon.ico?v=2" type="image/x-icon"></p>
+    </details>
+  </div>
+
+  <div class="wrapper">
+    <details>
+      <summary>
+        10. El atributo "corrector ortográfico"
+      </summary>
+      <p>Utilice el <code>spellcheck</code> atributo para definir si se puede revisar el elemento en busca de errores ortográficos.</p>
+      <p>Ejemplo:</p>
+      <p><input type="text" spellcheck="true" value="Texto con corrección ortográfica"></p>
+    </details>
+  </div>
+
+  <div class="wrapper">
+    <details>
+      <summary>
+        11. Controles deslizantes HTML nativos
+      </summary>
+      <p>Puede utilizar <code>&lt;input type="range"&gt;</code> para crear controles deslizantes.</p>
+      <p>Ejemplo:</p>
+      <p><input type="range" min="0" max="100" value="50" step="1"></p>
+    </details>
+  </div>
+
+  <div class="wrapper">
+    <details>
+      <summary>
+        12. Acordeón HTML
+      </summary>
+      <p>Puede utilizar el <code>&lt;details&gt;</code> elemento para crear un acordeón HTML nativo.</p>
+      <p>Ejemplo:</p>
+      <details>
+        <summary>Título del Acordeón</summary>
+        <p>Contenido oculto que se muestra al hacer clic en el resumen.</p>
+      </details>
+    </details>
+  </div>
+</body>
+</html>
